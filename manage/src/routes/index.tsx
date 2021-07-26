@@ -84,11 +84,11 @@ export default function App(props: IAppProps) {
       </Helmet>
       <EuiErrorBoundary>
         <Switch>
-          <Route exact path="/">
+          {/* <Route exact path="/">
             {user ? <Redirect to="/shop" /> : <Redirect to="/login" />}
           </Route>
-          <Route exact path="/login" component={Login} />
-          <Chrome>
+          <Route exact path="/login" component={Login} /> */}
+          {/* <Chrome> */}
             <Switch>
               <Route exact path="/shop" component={ShopDashBoard} />
               <Route path="/ext/list" component={ExtList} />
@@ -108,7 +108,7 @@ export default function App(props: IAppProps) {
                 <NoMatch />
               </Route>
             </Switch>
-          </Chrome>
+          {/* </Chrome> */}
         </Switch>
       </EuiErrorBoundary>
     </>
